@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEHMET – Hammam at Turkuman | MİT Kommando</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+    
+    <!-- HUD -->
+    <div id="hud">
+      <div id="player-info">
+        <div class="rank">Astsubay Üstçavuş Mehmet | MİT</div>
+        <div class="stats">
+          <span id="level">LVL 1</span>
+          <span id="xp">XP 0/100</span>
+          <span id="tl">₺ 0</span>
+          <span id="hp">HP 100/100</span>
+        </div>
+      </div>
+      <div id="mission-info">
+        <div id="mission-title">MISSION 01 – NACHTABWURF</div>
+        <div id="mission-obj">Ziel: Squad sammeln • Feindliche Linien durchbrechen</div>
+      </div>
+      <div id="weapon-info">
+        <div id="current-weapon">MPT-76</div>
+        <div id="ammo">30 / 120</div>
+      </div>
+    </div>
+
+    <!-- Night overlay + vignette -->
+    <div id="night-overlay"></div>
+    
+    <!-- Blood screen flash -->
+    <div id="blood-flash"></div>
+  </div>
+
+  <div id="start-screen">
+    <div class="start-content">
+      <h1>MEHMET</h1>
+      <h2>Hammam at Turkuman – Verdeckte Operation</h2>
+      <p>Astsubay Üstçavuş • Milli İstihbarat Teşkilatı</p>
+      <p class="location">36.53°N 39.07°E • Gouvernement ar-Rakka • Syrien</p>
+      <button id="start-btn">ABWURF STARTEN</button>
+      <p class="hint">WASD bewegen • Maus zielen • Linksklick schießen • R nachladen • E interagieren</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
